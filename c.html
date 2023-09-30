@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./c.css">
+    <link rel="stylesheet" href="./output.css">
+    <title>Challenge</title>
+</head>
+<body class="bg-orange-100 overflow-hidden">
+
+    <div id="main">
+        <header id="head" class="w-full fixed flex justify-between items-center p-5">
+            <h1 class="text-4xl md:text-5xl lg:text-5xl font-bold">تحديات كرة القدم</h1>
+
+            <div id="menu" class=" cursor-pointer flex justify-around items-center flex-col border-2 border-slate-800 w-12 h-12 md:w-16 md:h-16 lg:w-16 lg:h-16 rounded-md">
+                <span class="w-3/5 bg-green-700 h-1"></span>
+                <span class="w-3/5 bg-green-700 h-1"></span>
+                <span class="w-3/5 bg-green-700 h-1"></span>
+            </div>
+        </header>
+
+        <div id="nav" class="w-full bg-green-600 h-screen flex justify-center items-center">
+            <div id="links" class="flex justify-center items-center flex-col text-4xl md:text-5xl lg:text-5xl">
+                <a href="#" id="t" class="m-8 font-bold text-white">تمثيل</a>
+                <a href="#" id="f" class="m-8 font-bold text-white">5 * 10</a>
+                <a href="#" id="p" class="m-8 font-bold text-white">كلمة السر</a>
+            </div>
+            <div id="exitMenu" class=" cursor-pointer absolute top-0 right-0 bg-slate-100 w-8 md:w-10 lg:w-12 h-8 md:h-10 lg:h-10 text-center text-2xl font-bold">X</div>
+        </div>
+
+
+        <div id="home" class="w-full">
+            <h1 class="text-center text-4xl md:text-5xl lg:text-5xl font-bold">تحديات في معلومات كرة القدم</h1>
+        </div>
+
+
+        <div id="container">
+
+            <div id="who" class="w-full absolute top-0 h-screen">
+                <div id="WhoBtns" class="w-full flex justify-around items-center">
+                    <button id="showE" class="w-56 md:w-64 lg:w-72 p-3 border-2 border-white rounded-lg mt-3 text-3xl">لاعب اوروبي</button>
+                    <button id="showM" class="w-56 md:w-64 lg:w-72 p-3 border-2 border-white rounded-lg mt-3 text-3xl">لاعب محلي</button>
+                </div>
+
+                <div id="names" class="w-full">
+                    <h1 id="WhoNames" class=" p-1 mt-7 m-auto w-80 h-14 md:h-16 lg:h-20 lg:w-80 md:w-80 rounded-md border-2 border-white text-center text-4xl font-bold"></h1>
+                </div>
+
+                <div id="mainImg" class="w-full">
+                    <img src="./download.jpg" id="WhoMain" class="m-auto mt-4 w-80 h-80 md:w-96 md:h-72 lg:w-2/4 lg:h-72">
+                </div>
+                <div id="WhoST" class="w-full flex justify-around items-center mt-6">
+                    <button id="WhoTimer" class="w-20 h-20 md:w-24 md:h-24 lg:w-28 lg:h-24 border-2 border-white rounded-full text-3xl p-1 text-center">ابدا</button>
+                    <button id="WhoStop" class="w-20 h-20 md:w-24 md:h-24 lg:w-28 lg:h-24 border-2 border-white rounded-full text-3xl p-1 text-center">توقف</button>
+                </div>
+                <audio controls src="./old-alarm-sound_gdMsEsXK.mp3" class="hidden" preload="metadata" id="WhoAudio"></audio>
+                <div id="exitWho" class=" cursor-pointer absolute top-0 right-0 bg-slate-100 w-8 md:w-10 lg:w-12 h-8 md:h-10 lg:h-10 text-center text-2xl font-bold">X</div>
+            </div>
+
+
+            <div id="five" class="w-full h-screen absolute top-0">
+                <div id="chart" class="w-full mt-5">
+                    <h1 id="board" class="m-auto bg-slate-400 mt-6 p-1 text-2xl font-bold w-96 h-44 md:w-3/5 md:h-56 lg:w-2/3 lg:h-60 rounded-md text-center"></h1>
+                </div>
+                <div id="fBtn" class="w-full flex justify-center items-center mt-4">
+                    <button id="showQ" class="m-auto w-52 h-16 md:h-20 lg:h-24 md:w-60 p-2 lg:w-72 border-2 border-white rounded-lg text-3xl font-bold">اعرض السؤال</button>
+                </div>
+                <div id="fBtns" class="flex justify-around items-center mt-10">
+                    <button id="fTimer" class="w-24 h-24 md:w-28 md:h-28 lg:w-32 lg:h-32 border-2 border-white rounded-full text-3xl p-1 text-center">ابدا</button>
+                    <button id="fStop" class="w-24 h-24 md:w-28 md:h-28 lg:w-32 lg:h-32 border-2 border-white rounded-full text-3xl p-1 text-center">توقف</button>
+                </div>
+                <div id="exitFive" class=" cursor-pointer absolute top-0 right-0 bg-slate-100 w-8 md:w-10 lg:w-12 h-8 md:h-10 lg:h-10 text-center text-2xl font-bold">X</div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+
+<script src="./photos.js"></script>    
+<script src="./PhotosE.js"></script>    
+<script src="./questions.js"></script>    
+<script src="./c.js"></script>    
+</body>
+</html>
